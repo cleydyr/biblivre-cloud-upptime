@@ -5,6 +5,12 @@ repo: biblivre-cloud-upptime # The name of this repository
 sites:
   - name: Biblivre Baixada Literária
     url: https://baixadaliteraria.biblivre.cloud
+  - name: Releitura Pernambuco
+    url: https://releiturape.biblivre.cloud
+  - name: Biblioteca Municipal Celso Brant
+    url: https://trespontas.biblivre.cloud
+  - name: Associação São Roque
+    url: https://associacaosaoroque.biblivre.cloud
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
