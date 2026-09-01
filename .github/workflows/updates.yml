@@ -1,8 +1,7 @@
 #
 # Customized Upptime workflows: SHA-pinned actions.
-# Scheduled Update Template / Updates CI is disabled so these pins persist.
-# Re-run this workflow manually only if you intend to sync with upstream
-# (that will overwrite workflow files).
+# upptime/updates is currently a no-op; real upstream sync is Update Template CI,
+# which opens a PR instead of committing to the default branch.
 #
 # 🔼 Upptime @v1.43.16
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary

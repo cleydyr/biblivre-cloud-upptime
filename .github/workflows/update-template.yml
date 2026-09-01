@@ -1,8 +1,6 @@
 #
 # Customized Upptime workflows: SHA-pinned actions.
-# Scheduled Update Template / Updates CI is disabled so these pins persist.
-# Re-run this workflow manually only if you intend to sync with upstream
-# (that will overwrite workflow files).
+# Upstream template updates open a PR instead of committing to the default branch.
 #
 # 🔼 Upptime @v1.43.16
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
@@ -14,25 +12,77 @@
 
 name: Update Template CI
 on:
+  schedule:
+    - cron: "0 0 * * 0"
   repository_dispatch:
     types: [update_template]
   workflow_dispatch:
 concurrency:
-  group: ${{ github.repository }}-${{ github.head_ref || github.ref_name }}-upptime
+  group: upptime-template-update-pr
   cancel-in-progress: false
+permissions:
+  contents: write
+  pull-requests: write
 jobs:
   release:
-    name: Build
+    name: Propose template update
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_PAT || github.token }}
+      UPDATE_BRANCH: chore/upptime-template-update
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ github.head_ref || github.ref_name }}
+          ref: ${{ github.event.repository.default_branch }}
           token: ${{ secrets.GH_PAT || github.token }}
+      - name: Prepare update branch
+        run: |
+          set -euo pipefail
+          default_branch="${{ github.event.repository.default_branch }}"
+          git fetch origin "$default_branch"
+          git checkout -B "$UPDATE_BRANCH" "origin/${default_branch}"
+          git push --force-with-lease --set-upstream origin "$UPDATE_BRANCH"
       - name: Update template
         uses: upptime/uptime-monitor@a9df8681951501693cbd6bea9c84df24bbf94210 # v1.43.16
         with:
           command: "update-template"
         env:
           GH_PAT: ${{ secrets.GH_PAT || github.token }}
+      - name: Open or update pull request
+        run: |
+          set -euo pipefail
+          default_branch="${{ github.event.repository.default_branch }}"
+          pr_number="$(gh pr list --head "$UPDATE_BRANCH" --state open --json number --jq '.[0].number // empty')"
+
+          if git diff --quiet "origin/${default_branch}...HEAD"; then
+            echo "No upstream template changes."
+            if [ -n "${pr_number}" ]; then
+              gh pr close "${pr_number}" --comment "No upstream template changes this run."
+            fi
+            exit 0
+          fi
+
+          if [ -n "${pr_number}" ]; then
+            echo "Updated existing pull request #${pr_number}."
+            exit 0
+          fi
+
+          gh pr create \
+            --base "${default_branch}" \
+            --head "$UPDATE_BRANCH" \
+            --title "chore: update Upptime template" \
+            --body "$(cat <<'EOF'
+          ## Summary
+          Weekly sync of the official Upptime workflow templates.
+
+          Review before merging: the generator rewrites `.github/workflows/*.yml` and will drop SHA pins, npm caches, and this PR-based update flow unless those customizations are re-applied.
+
+          `Updates CI` (`upptime/updates`) is a no-op in current upstream, so only this template update is proposed.
+
+          ## Test plan
+          - [ ] Diff the regenerated workflows against the customized ones
+          - [ ] Re-apply SHA pins / npm cache if you still want them
+          - [ ] Confirm Uptime CI and Static Site CI still run after merge
+          EOF
+          )"

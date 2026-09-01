@@ -1,8 +1,7 @@
 #
 # Customized Upptime workflows: actions pinned to release SHAs.
-# Scheduled Update Template / Updates CI is disabled so these pins persist.
-# Re-run Update Template CI manually only if you intend to sync with upstream
-# (that will overwrite these files).
+# Upstream template updates open a PR (Update Template CI) instead of
+# committing to the default branch.
 #
 # 🔼 Upptime @v1.43.16
 # GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
