@@ -16,7 +16,7 @@ sites:
   - name: Instituto Luzia Basílio
     url: https://institutoluziabasilio.biblivre.cloud/
   - name: Biblioteca Teste
-    url: https://associacaosaoroque.biblivre.cloud
+    url: https://teste.biblivre.cloud
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
