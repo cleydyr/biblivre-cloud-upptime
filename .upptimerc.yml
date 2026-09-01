@@ -11,6 +11,12 @@ sites:
     url: https://trespontas.biblivre.cloud
   - name: Associação São Roque
     url: https://associacaosaoroque.biblivre.cloud
+  - name: Solar dos Abacaxis
+    url: https://solardosabacaxis.biblivre.cloud
+  - name: Instituto Luzia Basílio
+    url: https://institutolusiabasilio.biblivre.cloud
+  - name: Biblioteca Teste
+    url: https://associacaosaoroque.biblivre.cloud
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
