@@ -15,8 +15,16 @@ sites:
     url: https://solardosabacaxis.biblivre.cloud
   - name: Instituto Luzia Basílio
     url: https://institutoluziabasilio.biblivre.cloud/
-  - name: Biblioteca Teste
-    url: https://teste.biblivre.cloud
+  - name: LGA
+    url: https://lga.biblivre.cloud
+    expectedStatusCodes:
+      - 401
+  - name: GBA
+    url: https://gba.biblivre.cloud
+    expectedStatusCodes:
+      - 401
+  - name: Biblioteca Casa Amarela
+    url: https://casaamarela.biblivre.cloud
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
