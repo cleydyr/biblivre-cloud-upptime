@@ -79,18 +79,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/solardosabacaxis.biblivre.cloud.ico",
     "slug": "solar-dos-abacaxis",
     "status": "down",
-    "uptime": "99.14%",
-    "uptimeDay": "44.53%",
-    "uptimeWeek": "92.08%",
-    "uptimeMonth": "98.18%",
-    "uptimeYear": "99.14%",
+    "uptime": "98.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "81.32%",
+    "uptimeMonth": "95.70%",
+    "uptimeYear": "98.00%",
     "time": 1421,
     "timeDay": 0,
     "timeWeek": 461,
     "timeMonth": 804,
     "timeYear": 1421,
     "dailyMinutesDown": {
-      "2026-11-05": 253,
+      "2026-11-05": 1337,
       "2026-11-04": 546
     }
   },
@@ -135,9 +135,9 @@
     "url": "https://gba.biblivre.cloud",
     "icon": "https://icons.duckduckgo.com/ip3/gba.biblivre.cloud.ico",
     "slug": "gba",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.97%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -146,7 +146,9 @@
     "timeWeek": 354,
     "timeMonth": 393,
     "timeYear": 381,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-05": 0
+    }
   },
   {
     "name": "Biblioteca Casa Amarela",
