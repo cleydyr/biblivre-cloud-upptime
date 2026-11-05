@@ -11,8 +11,6 @@ sites:
     url: https://trespontas.biblivre.cloud
   - name: Associação São Roque
     url: https://associacaosaoroque.biblivre.cloud
-  - name: Solar dos Abacaxis
-    url: https://solardosabacaxis.biblivre.cloud
   - name: Instituto Luzia Basílio
     url: https://institutoluziabasilio.biblivre.cloud/
   - name: LGA
