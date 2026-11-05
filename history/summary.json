@@ -44,7 +44,7 @@
     "slug": "biblioteca-municipal-celso-brant",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "99.79%",
+    "uptimeDay": "99.78%",
     "uptimeWeek": "99.97%",
     "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
@@ -64,8 +64,8 @@
     "slug": "associacao-sao-roque",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "99.97%",
-    "uptimeWeek": "100.00%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.99%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
     "time": 1670,
@@ -74,7 +74,7 @@
     "timeMonth": 1401,
     "timeYear": 1670,
     "dailyMinutesDown": {
-      "2026-11-05": 0
+      "2026-11-05": 1
     }
   },
   {
@@ -140,7 +140,7 @@
     "slug": "biblioteca-casa-amarela",
     "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "99.99%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
