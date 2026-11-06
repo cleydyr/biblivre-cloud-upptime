@@ -12,7 +12,7 @@
     "uptimeYear": "99.81%",
     "time": 1158,
     "timeDay": 7540,
-    "timeWeek": 2231,
+    "timeWeek": 2467,
     "timeMonth": 1312,
     "timeYear": 1158,
     "dailyMinutesDown": {
@@ -32,7 +32,7 @@
     "uptimeYear": "100.00%",
     "time": 1588,
     "timeDay": 8019,
-    "timeWeek": 2377,
+    "timeWeek": 2628,
     "timeMonth": 1264,
     "timeYear": 1588,
     "dailyMinutesDown": {}
@@ -42,19 +42,20 @@
     "url": "https://trespontas.biblivre.cloud",
     "icon": "https://icons.duckduckgo.com/ip3/trespontas.biblivre.cloud.ico",
     "slug": "biblioteca-municipal-celso-brant",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.78%",
-    "uptimeWeek": "99.97%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "100.00%",
-    "time": 890,
-    "timeDay": 996,
-    "timeWeek": 834,
-    "timeMonth": 909,
-    "timeYear": 890,
+    "status": "up",
+    "uptime": "99.78%",
+    "uptimeDay": "85.50%",
+    "uptimeWeek": "97.93%",
+    "uptimeMonth": "99.52%",
+    "uptimeYear": "99.78%",
+    "time": 892,
+    "timeDay": 998,
+    "timeWeek": 832,
+    "timeMonth": 912,
+    "timeYear": 892,
     "dailyMinutesDown": {
-      "2026-11-05": 3
+      "2026-11-06": 141,
+      "2026-11-05": 68
     }
   },
   {
@@ -62,19 +63,20 @@
     "url": "https://associacaosaoroque.biblivre.cloud",
     "icon": "https://icons.duckduckgo.com/ip3/associacaosaoroque.biblivre.cloud.ico",
     "slug": "associacao-sao-roque",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.96%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 1670,
-    "timeDay": 10356,
-    "timeWeek": 2937,
-    "timeMonth": 1401,
-    "timeYear": 1670,
+    "status": "up",
+    "uptime": "99.78%",
+    "uptimeDay": "85.68%",
+    "uptimeWeek": "97.95%",
+    "uptimeMonth": "99.53%",
+    "uptimeYear": "99.78%",
+    "time": 1655,
+    "timeDay": 7100,
+    "timeWeek": 2940,
+    "timeMonth": 1377,
+    "timeYear": 1655,
     "dailyMinutesDown": {
-      "2026-11-05": 1
+      "2026-11-06": 141,
+      "2026-11-05": 66
     }
   },
   {
@@ -90,7 +92,7 @@
     "uptimeYear": "100.00%",
     "time": 1373,
     "timeDay": 1059,
-    "timeWeek": 590,
+    "timeWeek": 602,
     "timeMonth": 806,
     "timeYear": 1373,
     "dailyMinutesDown": {}
@@ -108,7 +110,7 @@
     "uptimeYear": "100.00%",
     "time": 379,
     "timeDay": 440,
-    "timeWeek": 368,
+    "timeWeek": 359,
     "timeMonth": 391,
     "timeYear": 379,
     "dailyMinutesDown": {}
@@ -126,7 +128,7 @@
     "uptimeYear": "99.96%",
     "time": 381,
     "timeDay": 433,
-    "timeWeek": 364,
+    "timeWeek": 355,
     "timeMonth": 394,
     "timeYear": 381,
     "dailyMinutesDown": {
@@ -138,19 +140,20 @@
     "url": "https://casaamarela.biblivre.cloud",
     "icon": "https://icons.duckduckgo.com/ip3/casaamarela.biblivre.cloud.ico",
     "slug": "biblioteca-casa-amarela",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.98%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 1308,
-    "timeDay": 491,
-    "timeWeek": 464,
-    "timeMonth": 781,
-    "timeYear": 1308,
+    "status": "up",
+    "uptime": "99.78%",
+    "uptimeDay": "85.70%",
+    "uptimeWeek": "97.96%",
+    "uptimeMonth": "99.53%",
+    "uptimeYear": "99.78%",
+    "time": 1297,
+    "timeDay": 509,
+    "timeWeek": 461,
+    "timeMonth": 774,
+    "timeYear": 1297,
     "dailyMinutesDown": {
-      "2026-11-05": 0
+      "2026-11-06": 141,
+      "2026-11-05": 65
     }
   }
 ]
